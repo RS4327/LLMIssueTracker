@@ -1,0 +1,758 @@
+[2026-06-20 12:49:00,374: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-20 12:49:00,402: INFO: common: YAML loaded successfully: Config\Config.yaml]
+[2026-06-20 12:49:00,442: INFO: common: YAML loaded successfully: params.yaml]
+[2026-06-20 12:49:00,445: INFO: common: Directory created: artifacts]
+[2026-06-20 12:49:01,511: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-20 12:52:55,955: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-20 12:52:55,962: INFO: common: YAML loaded successfully: Config\Config.yaml]
+[2026-06-20 12:52:55,971: INFO: common: YAML loaded successfully: params.yaml]
+[2026-06-20 12:52:55,974: INFO: common: Directory created: artifacts]
+[2026-06-20 12:52:56,359: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-20 13:12:42,479: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-20 13:12:42,481: ERROR: main: 'ConfigurationManager' object has no attribute 'config']
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 28, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 21, in main
+    config = ConfigurationManager().get_data_ingestion_config()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 20, in get_data_ingestion_config
+    Config=self.config.Data_Ingestion
+           ^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'config'
+[2026-06-20 13:14:52,796: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-20 13:14:52,796: ERROR: main: 'ConfigurationManager' object has no attribute 'Data_Ingestion']
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 28, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 21, in main
+    config = ConfigurationManager().get_data_ingestion_config()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 20, in get_data_ingestion_config
+    Config=self.Data_Ingestion
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'Data_Ingestion'
+[2026-06-20 13:15:27,862: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-20 13:15:27,862: ERROR: main: 'ConfigurationManager' object has no attribute 'Data_Ingestion']
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 28, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 21, in main
+    config = ConfigurationManager().get_data_ingestion_config()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 20, in get_data_ingestion_config
+    Config=self.Data_Ingestion
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'Data_Ingestion'
+[2026-06-20 13:16:55,759: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-20 13:16:55,760: ERROR: main: 'ConfigurationManager' object has no attribute 'Data_Ingestion']
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 28, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 21, in main
+    config = ConfigurationManager().get_data_ingestion_config()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 20, in get_data_ingestion_config
+    Config=self.Data_Ingestion
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'Data_Ingestion'
+[2026-06-20 13:19:06,742: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-20 13:20:33,156: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-20 13:26:57,973: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-20 13:26:57,975: ERROR: main: YAML file does not exist -> Config\Config.yaml]
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 28, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 21, in main
+    config = ConfigurationManager().get_data_ingestion_config()
+             ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 19, in __init__
+    self.config=Read_Yaml(Path("Config/Config.yaml"))
+                ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 52, in Read_Yaml
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 30, in Read_Yaml
+    raise FileNotFoundError(
+        f"YAML file does not exist -> {path_to_yaml}"
+    )
+FileNotFoundError: YAML file does not exist -> Config\Config.yaml
+[2026-06-20 13:30:31,680: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-20 13:30:31,684: ERROR: main: YAML file does not exist -> Config\Config.yaml]
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 28, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 21, in main
+    config = ConfigurationManager().get_data_ingestion_config()
+             ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 26, in __init__
+    self.config=Read_Yaml(Path("Config/Config.yaml"))
+                ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 52, in Read_Yaml
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 30, in Read_Yaml
+    raise FileNotFoundError(
+        f"YAML file does not exist -> {path_to_yaml}"
+    )
+FileNotFoundError: YAML file does not exist -> Config\Config.yaml
+[2026-06-20 13:39:58,785: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-20 13:39:58,791: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-20 13:39:58,792: ERROR: main: YAML file does not exist -> C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Params.yaml]
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 28, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 21, in main
+    config = ConfigurationManager().get_data_ingestion_config()
+             ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 31, in __init__
+    self.params = Read_Yaml(params_path)
+                  ~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 52, in Read_Yaml
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 30, in Read_Yaml
+    raise FileNotFoundError(
+        f"YAML file does not exist -> {path_to_yaml}"
+    )
+FileNotFoundError: YAML file does not exist -> C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Params.yaml
+[2026-06-20 13:40:29,972: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-20 13:40:29,978: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-20 13:40:30,015: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-20 13:40:31,672: ERROR: main: name 'pd' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 28, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 24, in main
+    df = ingestion.LogDataFrame()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Components\Data_Ingestion.py", line 88, in LogDataFrame
+    df = pd.read_sql(query, conn)
+         ^^
+NameError: name 'pd' is not defined. Did you mean: 'id'?
+[2026-06-20 13:40:58,323: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-20 13:41:00,112: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-20 13:41:00,121: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-20 13:41:00,131: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-20 13:41:02,143: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-20 19:49:52,086: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-20 19:49:53,440: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-20 19:49:53,505: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-20 19:49:53,514: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-20 19:49:53,517: INFO: Common: Created directory : artifacts]
+[2026-06-20 19:49:58,459: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-20 19:51:41,469: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-20 19:51:42,574: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-20 19:51:42,580: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-20 19:51:42,587: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-20 19:51:42,590: INFO: Common: Created directory : artifacts]
+[2026-06-20 19:51:43,511: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-21 11:19:49,171: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-21 11:19:50,298: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-21 11:19:50,355: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-21 11:19:50,463: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-21 11:19:50,464: INFO: Common: Created directory : artifacts]
+[2026-06-21 11:19:53,595: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-21 11:23:07,239: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-21 11:23:07,803: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-21 11:23:07,806: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-21 11:23:07,809: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-21 11:23:07,810: INFO: Common: Created directory : artifacts]
+[2026-06-21 11:23:08,541: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-21 11:24:07,817: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-21 11:24:08,230: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-21 11:24:08,237: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-21 11:24:08,247: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-21 11:24:08,249: INFO: Common: Created directory : artifacts]
+[2026-06-21 11:24:08,836: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-21 11:24:50,916: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-21 11:24:51,337: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-21 11:24:51,341: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-21 11:24:51,344: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-21 11:24:51,345: INFO: Common: Created directory : artifacts]
+[2026-06-21 11:24:51,852: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-21 11:25:58,996: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-21 11:26:00,141: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-21 11:26:00,145: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-21 11:26:00,149: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-21 11:26:00,150: INFO: Common: Created directory : artifacts]
+[2026-06-21 11:26:01,000: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-21 11:26:34,643: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-21 11:26:35,047: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-21 11:26:35,050: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-21 11:26:35,053: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-21 11:26:35,054: INFO: Common: Created directory : artifacts]
+[2026-06-21 11:26:35,828: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-21 11:27:43,761: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-21 11:27:44,162: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-21 11:27:44,165: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-21 11:27:44,168: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-21 11:27:44,169: INFO: Common: Created directory : artifacts]
+[2026-06-21 11:27:44,862: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-21 11:30:18,943: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-21 11:30:19,341: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-21 11:30:19,345: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-21 11:30:19,348: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-21 11:30:19,349: INFO: Common: Created directory : artifacts]
+[2026-06-21 11:30:19,356: INFO: Common: Created directory : artifacts_root\DataIngestion]
+[2026-06-21 11:30:20,219: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-21 11:31:18,517: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-21 11:31:18,947: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-21 11:31:18,953: ERROR: main: expected '<document start>', but found '<block mapping start>'
+  in "C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml", line 14, column 1]
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 29, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 21, in main
+    config = ConfigurationManager().get_data_ingestion_config()
+             ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 30, in __init__
+    self.config = Read_Yaml(config_path)
+                  ~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 52, in Read_Yaml
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 35, in Read_Yaml
+    content = yaml.safe_load(yaml_file)
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\composer.py", line 39, in get_single_node
+    if not self.check_event(StreamEndEvent):
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\parser.py", line 171, in parse_document_start
+    raise ParserError(None, None,
+    ...<2 lines>...
+            self.peek_token().start_mark)
+yaml.parser.ParserError: expected '<document start>', but found '<block mapping start>'
+  in "C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml", line 14, column 1
+[2026-06-21 11:32:20,546: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-21 11:32:20,948: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-21 11:32:20,954: ERROR: main: expected '<document start>', but found '<block mapping start>'
+  in "C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml", line 14, column 1]
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 29, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 21, in main
+    config = ConfigurationManager().get_data_ingestion_config()
+             ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 30, in __init__
+    self.config = Read_Yaml(config_path)
+                  ~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 52, in Read_Yaml
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 35, in Read_Yaml
+    content = yaml.safe_load(yaml_file)
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\composer.py", line 39, in get_single_node
+    if not self.check_event(StreamEndEvent):
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\parser.py", line 171, in parse_document_start
+    raise ParserError(None, None,
+    ...<2 lines>...
+            self.peek_token().start_mark)
+yaml.parser.ParserError: expected '<document start>', but found '<block mapping start>'
+  in "C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml", line 14, column 1
+[2026-06-21 11:33:42,913: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-21 11:33:43,318: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-21 11:33:43,321: ERROR: main: expected '<document start>', but found '<block mapping start>'
+  in "C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml", line 14, column 1]
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 29, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 21, in main
+    config = ConfigurationManager().get_data_ingestion_config()
+             ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 30, in __init__
+    self.config = Read_Yaml(config_path)
+                  ~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 52, in Read_Yaml
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 35, in Read_Yaml
+    content = yaml.safe_load(yaml_file)
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\composer.py", line 39, in get_single_node
+    if not self.check_event(StreamEndEvent):
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\parser.py", line 171, in parse_document_start
+    raise ParserError(None, None,
+    ...<2 lines>...
+            self.peek_token().start_mark)
+yaml.parser.ParserError: expected '<document start>', but found '<block mapping start>'
+  in "C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml", line 14, column 1
+[2026-06-21 11:35:07,262: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-21 11:35:07,765: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-21 11:35:07,774: ERROR: main: expected '<document start>', but found '<block mapping start>'
+  in "C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml", line 14, column 1]
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 29, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 21, in main
+    config = ConfigurationManager().get_data_ingestion_config()
+             ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 30, in __init__
+    self.config = Read_Yaml(config_path)
+                  ~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 52, in Read_Yaml
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 35, in Read_Yaml
+    content = yaml.safe_load(yaml_file)
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\composer.py", line 39, in get_single_node
+    if not self.check_event(StreamEndEvent):
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\yaml\parser.py", line 171, in parse_document_start
+    raise ParserError(None, None,
+    ...<2 lines>...
+            self.peek_token().start_mark)
+yaml.parser.ParserError: expected '<document start>', but found '<block mapping start>'
+  in "C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml", line 14, column 1
+[2026-06-21 11:35:26,773: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-21 11:35:27,179: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-21 11:35:27,184: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-21 11:35:27,190: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-21 11:35:27,191: INFO: Common: Created directory : artifacts]
+[2026-06-21 11:35:27,202: ERROR: main: Key 'root_dir' not found in ConfigBox]
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 29, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 21, in main
+    config = ConfigurationManager().get_data_ingestion_config()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 51, in get_data_ingestion_config
+    create_directories([self.config.root_dir])
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 15, in __getattr__
+    raise AttributeError(
+        f"Key '{item}' not found in ConfigBox"
+    )
+AttributeError: Key 'root_dir' not found in ConfigBox
+[2026-06-21 11:36:28,195: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-21 11:36:28,599: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-21 11:36:28,603: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-21 11:36:28,606: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-21 11:36:28,607: INFO: Common: Created directory : artifacts]
+[2026-06-21 11:36:28,613: ERROR: main: 'ConfigurationManager' object has no attribute 'root_dir']
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 29, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 21, in main
+    config = ConfigurationManager().get_data_ingestion_config()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 51, in get_data_ingestion_config
+    create_directories([self.root_dir])
+                        ^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'root_dir'
+[2026-06-21 11:37:14,169: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-21 11:37:14,792: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-21 11:37:14,796: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-21 11:37:14,800: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-21 11:37:14,801: INFO: Common: Created directory : artifacts]
+[2026-06-21 11:37:14,802: ERROR: main: Key 'root_dir' not found in ConfigBox]
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 29, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 21, in main
+    config = ConfigurationManager().get_data_ingestion_config()
+             ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 33, in __init__
+    create_directories([self.config.root_dir])
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 15, in __getattr__
+    raise AttributeError(
+        f"Key '{item}' not found in ConfigBox"
+    )
+AttributeError: Key 'root_dir' not found in ConfigBox
+[2026-06-21 11:37:27,083: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-21 11:37:27,467: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-21 11:37:27,470: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-21 11:37:27,474: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-21 11:37:27,475: INFO: Common: Created directory : artifacts]
+[2026-06-21 11:37:28,387: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-21 11:38:20,588: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-21 11:38:20,990: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-21 11:38:20,995: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-21 11:38:21,001: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-21 11:38:21,005: INFO: Common: Created directory : artifacts]
+[2026-06-21 11:38:21,015: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-21 11:38:21,496: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-23 17:46:13,758: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-23 17:46:14,532: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-23 17:46:14,550: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-23 17:46:14,620: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-23 17:46:14,625: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-23 17:46:20,492: ERROR: main: 'DataIngestion' object has no attribute 'root_dir']
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 29, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 24, in main
+    df = ingestion.LogDataFrame()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Components\Data_Ingestion.py", line 94, in LogDataFrame
+    df.to_csv(self.root_dir/"com_data_log.csv",index=False)
+              ^^^^^^^^^^^^^
+AttributeError: 'DataIngestion' object has no attribute 'root_dir'
+[2026-06-23 17:47:54,033: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-23 17:47:54,466: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-23 17:47:54,471: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-23 17:47:54,474: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-23 17:47:54,482: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-23 17:47:55,332: ERROR: main: unsupported operand type(s) for /: 'function' and 'str']
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 29, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 24, in main
+    df = ingestion.LogDataFrame()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Components\Data_Ingestion.py", line 95, in LogDataFrame
+    df.to_csv(save_object/"com_data_log.csv",index=False)
+              ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for /: 'function' and 'str'
+[2026-06-23 17:49:25,151: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-23 17:49:25,709: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-23 17:49:25,712: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-23 17:49:25,714: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-23 17:49:25,720: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-23 17:49:26,943: ERROR: main: Cannot save file into a non-existent directory: 'artifacts\data_ingestion']
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 29, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 24, in main
+    df = ingestion.LogDataFrame()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Components\Data_Ingestion.py", line 95, in LogDataFrame
+    df.to_csv(Path(self.config.local_data_file), index=False)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\core\generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\io\common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\io\common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'artifacts\data_ingestion'
+[2026-06-23 17:53:45,804: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-23 17:53:46,123: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-23 17:53:46,127: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-23 17:53:46,129: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-23 17:53:46,134: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-23 17:53:46,794: ERROR: main: Cannot save file into a non-existent directory: 'artifacts\data_ingestion']
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 29, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 24, in main
+    df = ingestion.LogDataFrame()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Components\Data_Ingestion.py", line 95, in LogDataFrame
+    df.to_csv(
+    ~~~~~~~~~^
+        self.save_file,
+        ^^^^^^^^^^^^^^^
+        index=False
+        ^^^^^^^^^^^
+    
+    
+        )
+        ^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\core\generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\io\common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\io\common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'artifacts\data_ingestion'
+[2026-06-23 17:55:08,500: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-23 17:55:08,802: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-23 17:55:08,805: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-23 17:55:08,808: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-23 17:55:08,813: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-23 17:55:11,955: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-23 17:57:46,787: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-23 17:57:47,097: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-23 17:57:47,102: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-23 17:57:47,105: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-23 17:57:47,114: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-23 17:57:47,588: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-23 18:40:12,188: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-23 18:40:12,808: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-23 18:40:12,812: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-23 18:40:12,815: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-23 18:40:12,825: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-23 18:40:14,491: ERROR: main: [Errno 13] Permission denied: 'artifacts\\DataIngestion']
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 29, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 24, in main
+    df = ingestion.LogDataFrame()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Components\Data_Ingestion.py", line 122, in LogDataFrame
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Components\Data_Ingestion.py", line 110, in LogDataFrame
+    df.to_csv(
+    ~~~~~~~~~^
+        self.save_file,
+        ^^^^^^^^^^^^^^^
+        index=False
+        ^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\core\generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'artifacts\\DataIngestion'
+[2026-06-23 18:42:34,686: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-23 18:42:34,973: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-23 18:42:34,975: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-23 18:42:34,977: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-23 18:42:34,983: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-23 18:42:35,515: ERROR: main: [Errno 13] Permission denied: 'artifacts\\DataIngestion']
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 24, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 29, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 24, in main
+    df = ingestion.LogDataFrame()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Components\Data_Ingestion.py", line 122, in LogDataFrame
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Components\Data_Ingestion.py", line 110, in LogDataFrame
+    df.to_csv(
+    ~~~~~~~~~^
+        self.save_file,
+        ^^^^^^^^^^^^^^^
+        index=False
+        ^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\core\generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'artifacts\\DataIngestion'
+[2026-06-23 18:46:11,816: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-23 18:46:12,136: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-23 18:46:12,140: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-23 18:46:12,148: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-23 18:46:12,158: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-23 18:46:12,991: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-24 21:58:53,545: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-24 21:58:55,036: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-24 21:58:55,085: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-24 21:58:55,119: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-24 21:58:55,133: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-24 21:58:58,695: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-24 21:58:58,696: INFO: main: >>>>>>>>>> Stage : Data Cleaning Started <<<<<<<<<<]
+[2026-06-24 21:58:58,702: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-24 21:58:58,709: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-24 21:58:58,731: ERROR: main: 'ConfigurationManager' object has no attribute 'Data_Cleaning']
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 42, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_02_Data_Cleaning.py", line 27, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_02_Data_Cleaning.py", line 21, in main
+    config = ConfigurationManager().get_data_cleaning_config()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 74, in get_data_cleaning_config
+    config = self.Data_Cleaning
+             ^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'Data_Cleaning'
+[2026-06-24 22:00:57,731: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-24 22:00:58,210: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-24 22:00:58,214: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-24 22:00:58,218: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-24 22:00:58,225: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-24 22:00:59,600: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-24 22:00:59,600: INFO: main: >>>>>>>>>> Stage : Data Cleaning Started <<<<<<<<<<]
+[2026-06-24 22:00:59,605: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-24 22:00:59,609: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-24 22:00:59,617: ERROR: main: 'ConfigurationManager' object has no attribute 'Data_Cleaning']
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 42, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_02_Data_Cleaning.py", line 27, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_02_Data_Cleaning.py", line 21, in main
+    config = ConfigurationManager().get_data_cleaning_config()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 74, in get_data_cleaning_config
+    config = self.Data_Cleaning
+             ^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'Data_Cleaning'
+[2026-06-24 22:04:48,576: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-24 22:04:49,491: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-24 22:04:49,497: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-24 22:04:49,501: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-24 22:04:49,512: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-24 22:04:50,645: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-24 22:04:50,646: INFO: main: >>>>>>>>>> Stage : Data Cleaning Started <<<<<<<<<<]
+[2026-06-24 22:04:50,655: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-24 22:04:50,662: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-24 22:04:50,686: INFO: Common: Created directory : artifacts/Data_Cleaning]
+[2026-06-24 22:04:50,774: INFO: main: >>>>>>>>>> Stage : Data Cleaning Completed Successfully <<<<<<<<<<]
