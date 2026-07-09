@@ -7,7 +7,7 @@
     port : 1521
     service : free
     username : SYSTEM
-    password : sys
+    password : rsr
   source_table : COM_LOG
   local_data_file : artifacts/DataIngestion/com_data_log.csv
 
@@ -15,5 +15,18 @@
  Data_Cleaning :
   root_dir : artifacts/Data_Cleaning
   source_path : artifacts/DataIngestion/com_data_log.csv
-  local_data_file : artifacts/DataIngestion/pre_processed_log.csv
-   
+  local_data_file : artifacts/Data_Cleaning/pre_processed_log.csv
+
+ Create_Embendings :
+  root_dir : artifacts/Create_Embendings
+  source_path : artifacts/Data_Cleaning/pre_processed_log.csv
+  local_data_file : artifacts/Create_Embendings/embeddings.npy
+
+ Create_Vectors :
+  root_dir : artifacts/Create_Vectors
+  source_path : artifacts/DataIngestion/com_data_log.csv
+  local_data_file : artifacts/Create_Vectors/index.pkl
+ Rag_Engine :
+  root_dir : artifacts/Rag_Engine
+  source_path : artifacts/Create_Vectors/index.pkl
+  local_data_file : artifacts/Rag_Engine/

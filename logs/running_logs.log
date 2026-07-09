@@ -756,3 +756,286 @@ AttributeError: 'ConfigurationManager' object has no attribute 'Data_Cleaning'
 [2026-06-24 22:04:50,662: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
 [2026-06-24 22:04:50,686: INFO: Common: Created directory : artifacts/Data_Cleaning]
 [2026-06-24 22:04:50,774: INFO: main: >>>>>>>>>> Stage : Data Cleaning Completed Successfully <<<<<<<<<<]
+[2026-06-29 10:00:22,626: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-29 10:00:23,943: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-29 10:00:23,953: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-29 10:00:24,102: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-29 10:00:24,109: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-29 10:00:28,258: ERROR: main: ORA-28001: The account has expired. The password must be changed.
+Help: https://docs.oracle.com/error-help/db/ora-28001/]
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 25, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 29, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 24, in main
+    df = ingestion.LogDataFrame()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Components\Data_Ingestion.py", line 76, in LogDataFrame
+    conn = self.get_connection()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Components\Data_Ingestion.py", line 31, in get_connection
+    conn = oracledb.connect(
+        user=self.config.oracledbconnection.username,
+        password=self.config.oracledbconnection.password,
+        dsn=dsn
+    )
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\oracledb\connection.py", line 1768, in connect
+    return conn_class(dsn=dsn, pool=pool, params=params, **kwargs)
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\oracledb\connection.py", line 892, in __init__
+    impl.connect(params_impl)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "src/oracledb/impl/thin/connection.pyx", line 544, in oracledb.thin_impl.ThinConnImpl.connect
+  File "src/oracledb/impl/thin/connection.pyx", line 540, in oracledb.thin_impl.ThinConnImpl.connect
+  File "src/oracledb/impl/thin/connection.pyx", line 482, in oracledb.thin_impl.ThinConnImpl._connect_with_params
+  File "src/oracledb/impl/thin/connection.pyx", line 463, in oracledb.thin_impl.ThinConnImpl._connect_with_description
+  File "src/oracledb/impl/thin/connection.pyx", line 432, in oracledb.thin_impl.ThinConnImpl._connect_with_address
+  File "src/oracledb/impl/thin/protocol.pyx", line 368, in oracledb.thin_impl.Protocol._connect_phase_two
+  File "src/oracledb/impl/thin/protocol.pyx", line 494, in oracledb.thin_impl.Protocol._process_message
+  File "src/oracledb/impl/thin/messages/base.pyx", line 102, in oracledb.thin_impl.Message._check_and_raise_exception
+oracledb.exceptions.DatabaseError: ORA-28001: The account has expired. The password must be changed.
+Help: https://docs.oracle.com/error-help/db/ora-28001/
+[2026-06-29 10:07:22,597: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-29 10:07:23,314: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-29 10:07:23,323: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-29 10:07:23,330: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-29 10:07:23,344: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-29 10:07:26,369: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-29 10:07:26,370: INFO: main: >>>>>>>>>> Stage : Data Cleaning Started <<<<<<<<<<]
+[2026-06-29 10:07:26,378: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-29 10:07:26,384: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-29 10:07:26,490: INFO: Common: Created directory : artifacts/Data_Cleaning]
+[2026-06-29 10:07:26,571: INFO: main: >>>>>>>>>> Stage : Data Cleaning Completed Successfully <<<<<<<<<<]
+[2026-06-30 13:06:33,747: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-30 13:08:23,619: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-30 14:45:11,912: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-30 14:45:58,565: WARNING: module_wrapper: From C:\Users\rajum\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2026-06-30 15:11:19,250: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-30 15:12:04,137: WARNING: module_wrapper: From C:\Users\rajum\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2026-06-30 15:19:02,494: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-30 15:22:28,043: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-30 15:23:19,019: WARNING: module_wrapper: From C:\Users\rajum\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2026-06-30 15:26:54,154: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-30 15:35:18,163: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-30 16:14:07,132: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-30 16:14:43,507: WARNING: module_wrapper: From C:\Users\rajum\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2026-06-30 16:14:44,218: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-06-30 16:14:45,018: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-30 16:14:45,054: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-30 16:14:45,089: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-30 16:14:45,100: ERROR: main: Key 'Create_Embednings' not found in ConfigBox]
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 26, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 29, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_01_Data_Ingestion.py", line 21, in main
+    config = ConfigurationManager().get_data_ingestion_config()
+             ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 47, in __init__
+    self.Create_Embedings=self.config.Create_Embednings
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 15, in __getattr__
+    raise AttributeError(
+        f"Key '{item}' not found in ConfigBox"
+    )
+AttributeError: Key 'Create_Embednings' not found in ConfigBox. Did you mean: 'Create_Embeddings'?
+[2026-06-30 17:24:32,125: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-30 17:25:27,295: WARNING: module_wrapper: From C:\Users\rajum\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2026-06-30 17:25:28,781: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-06-30 17:25:30,489: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-30 17:25:30,508: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-30 17:25:30,516: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-30 17:25:30,530: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-30 17:25:35,720: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-30 17:25:35,720: INFO: main: >>>>>>>>>> Stage : Data Cleaning Started <<<<<<<<<<]
+[2026-06-30 17:25:35,732: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-30 17:25:35,739: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-30 17:25:35,796: INFO: Common: Created directory : artifacts/Data_Cleaning]
+[2026-06-30 17:25:35,892: INFO: main: >>>>>>>>>> Stage : Data Cleaning Completed Successfully <<<<<<<<<<]
+[2026-06-30 17:25:35,893: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Started <<<<<<<<<<]
+[2026-06-30 17:25:35,899: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-30 17:25:35,906: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-30 17:25:35,938: ERROR: main: 'ConfigurationManager' object has no attribute 'Create_Embedings']
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 62, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_03_Create_Embendings.py", line 27, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_03_Create_Embendings.py", line 21, in main
+    config = ConfigurationManager().get_create_embendings_config()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 87, in get_create_embendings_config
+    config=self.Create_Embedings
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'Create_Embedings'. Did you mean: 'Create_Embendings'?
+[2026-06-30 17:27:25,163: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-30 17:28:02,195: WARNING: module_wrapper: From C:\Users\rajum\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2026-06-30 17:28:03,056: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-06-30 17:28:03,659: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-30 17:28:03,663: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-30 17:28:03,666: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-30 17:28:03,674: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-30 17:28:04,135: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-30 17:28:04,136: INFO: main: >>>>>>>>>> Stage : Data Cleaning Started <<<<<<<<<<]
+[2026-06-30 17:28:04,139: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-30 17:28:04,144: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-30 17:28:04,176: INFO: Common: Created directory : artifacts/Data_Cleaning]
+[2026-06-30 17:28:04,233: INFO: main: >>>>>>>>>> Stage : Data Cleaning Completed Successfully <<<<<<<<<<]
+[2026-06-30 17:28:04,234: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Started <<<<<<<<<<]
+[2026-06-30 17:28:04,239: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-30 17:28:04,248: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-30 17:28:04,279: INFO: Common: Created directory : artifacts/Create_Embendings]
+[2026-06-30 17:28:04,289: INFO: SentenceTransformer: Use pytorch device_name: cpu]
+[2026-06-30 17:28:04,290: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2]
+[2026-06-30 17:28:09,511: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Completed Successfully <<<<<<<<<<]
+[2026-06-30 17:42:20,843: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-06-30 17:43:10,030: WARNING: module_wrapper: From C:\Users\rajum\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2026-06-30 17:43:10,995: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-06-30 17:43:12,407: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-06-30 17:43:12,422: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-30 17:43:12,429: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-30 17:43:12,439: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-06-30 17:43:13,352: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-06-30 17:43:13,352: INFO: main: >>>>>>>>>> Stage : Data Cleaning Started <<<<<<<<<<]
+[2026-06-30 17:43:13,359: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-30 17:43:13,364: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-30 17:43:13,485: INFO: Common: Created directory : artifacts/Data_Cleaning]
+[2026-06-30 17:43:13,577: INFO: main: >>>>>>>>>> Stage : Data Cleaning Completed Successfully <<<<<<<<<<]
+[2026-06-30 17:43:13,578: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Started <<<<<<<<<<]
+[2026-06-30 17:43:13,587: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-06-30 17:43:13,594: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-06-30 17:43:13,619: INFO: Common: Created directory : artifacts/Create_Embendings]
+[2026-06-30 17:43:13,630: INFO: SentenceTransformer: Use pytorch device_name: cpu]
+[2026-06-30 17:43:13,630: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2]
+[2026-06-30 17:43:18,599: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Completed Successfully <<<<<<<<<<]
+[2026-07-01 20:47:55,902: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-07-01 20:48:38,112: WARNING: module_wrapper: From C:\Users\rajum\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2026-07-01 20:48:39,174: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-07-01 20:50:15,545: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-07-01 20:50:47,131: WARNING: module_wrapper: From C:\Users\rajum\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2026-07-01 20:50:47,714: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-07-01 20:51:21,518: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-07-01 20:51:50,556: WARNING: module_wrapper: From C:\Users\rajum\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2026-07-01 20:51:51,156: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-07-01 20:51:51,691: INFO: loader: Loading faiss with AVX2 support.]
+[2026-07-01 20:51:51,691: INFO: loader: Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")]
+[2026-07-01 20:51:51,691: INFO: loader: Loading faiss.]
+[2026-07-01 20:51:51,730: INFO: loader: Successfully loaded faiss.]
+[2026-07-01 20:51:51,742: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-07-01 20:51:51,767: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-01 20:51:51,789: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-01 20:51:51,794: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-07-01 20:51:55,685: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-07-01 20:51:55,686: INFO: main: >>>>>>>>>> Stage : Data Cleaning Started <<<<<<<<<<]
+[2026-07-01 20:51:55,690: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-01 20:51:55,694: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-01 20:51:55,736: INFO: Common: Created directory : artifacts/Data_Cleaning]
+[2026-07-01 20:51:55,762: INFO: main: >>>>>>>>>> Stage : Data Cleaning Completed Successfully <<<<<<<<<<]
+[2026-07-01 20:51:55,762: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Started <<<<<<<<<<]
+[2026-07-01 20:51:55,767: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-01 20:51:55,773: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-01 20:51:55,788: INFO: Common: Created directory : artifacts/Create_Embendings]
+[2026-07-01 20:51:55,796: INFO: SentenceTransformer: Use pytorch device_name: cpu]
+[2026-07-01 20:51:55,797: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2]
+[2026-07-01 20:51:59,755: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Completed Successfully <<<<<<<<<<]
+[2026-07-01 20:51:59,755: INFO: main: >>>>>>>>>> Stage : Data Creaet Vectors Started <<<<<<<<<<]
+[2026-07-01 20:51:59,760: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-01 20:51:59,766: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-01 20:51:59,790: ERROR: main: 'ConfigurationManager' object has no attribute 'Create_Vectors']
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 81, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_04_Create_Vectors.py", line 28, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_04_Create_Vectors.py", line 22, in main
+    config = config_manager.get_create_vectors_config()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 101, in get_create_vectors_config
+    config=self.Create_Vectors
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'Create_Vectors'. Did you mean: 'Create_vectors'?
+[2026-07-01 20:58:12,088: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-07-01 20:58:53,540: WARNING: module_wrapper: From C:\Users\rajum\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2026-07-01 20:58:54,421: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-07-01 20:58:55,902: INFO: loader: Loading faiss with AVX2 support.]
+[2026-07-01 20:58:55,902: INFO: loader: Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")]
+[2026-07-01 20:58:55,903: INFO: loader: Loading faiss.]
+[2026-07-01 20:58:56,087: INFO: loader: Successfully loaded faiss.]
+[2026-07-01 20:58:56,098: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-07-01 20:58:56,103: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-01 20:58:56,107: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-01 20:58:56,112: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-07-01 20:58:57,514: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-07-01 20:58:57,515: INFO: main: >>>>>>>>>> Stage : Data Cleaning Started <<<<<<<<<<]
+[2026-07-01 20:58:57,522: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-01 20:58:57,526: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-01 20:58:57,562: INFO: Common: Created directory : artifacts/Data_Cleaning]
+[2026-07-01 20:58:57,602: INFO: main: >>>>>>>>>> Stage : Data Cleaning Completed Successfully <<<<<<<<<<]
+[2026-07-01 20:58:57,602: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Started <<<<<<<<<<]
+[2026-07-01 20:58:57,608: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-01 20:58:57,612: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-01 20:58:57,626: INFO: Common: Created directory : artifacts/Create_Embendings]
+[2026-07-01 20:58:57,634: INFO: SentenceTransformer: Use pytorch device_name: cpu]
+[2026-07-01 20:58:57,634: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2]
+[2026-07-01 20:59:01,649: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Completed Successfully <<<<<<<<<<]
+[2026-07-01 20:59:01,649: INFO: main: >>>>>>>>>> Stage : Data Creaet Vectors Started <<<<<<<<<<]
+[2026-07-01 20:59:01,654: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-01 20:59:01,659: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-01 20:59:01,692: ERROR: main: 'ConfigurationManager' object has no attribute 'Create_Vectors']
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 81, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_04_Create_Vectors.py", line 28, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_04_Create_Vectors.py", line 22, in main
+    config = config_manager.get_create_vectors_config()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 101, in get_create_vectors_config
+    config=self.Create_Vectors
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'Create_Vectors'. Did you mean: 'Create_vectors'?
+[2026-07-01 20:59:41,125: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-07-01 21:00:14,379: WARNING: module_wrapper: From C:\Users\rajum\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2026-07-01 21:00:14,953: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-07-01 21:00:15,478: INFO: loader: Loading faiss with AVX2 support.]
+[2026-07-01 21:00:15,479: INFO: loader: Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")]
+[2026-07-01 21:00:15,479: INFO: loader: Loading faiss.]
+[2026-07-01 21:00:15,517: INFO: loader: Successfully loaded faiss.]
+[2026-07-01 21:00:15,525: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-07-01 21:00:15,529: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-01 21:00:15,532: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-01 21:00:15,535: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-07-01 21:00:15,933: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-07-01 21:00:15,933: INFO: main: >>>>>>>>>> Stage : Data Cleaning Started <<<<<<<<<<]
+[2026-07-01 21:00:15,939: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-01 21:00:15,943: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-01 21:00:15,958: INFO: Common: Created directory : artifacts/Data_Cleaning]
+[2026-07-01 21:00:15,982: INFO: main: >>>>>>>>>> Stage : Data Cleaning Completed Successfully <<<<<<<<<<]
+[2026-07-01 21:00:15,984: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Started <<<<<<<<<<]
+[2026-07-01 21:00:15,991: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-01 21:00:15,995: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-01 21:00:16,010: INFO: Common: Created directory : artifacts/Create_Embendings]
+[2026-07-01 21:00:16,015: INFO: SentenceTransformer: Use pytorch device_name: cpu]
+[2026-07-01 21:00:16,015: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2]
+[2026-07-01 21:00:19,096: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Completed Successfully <<<<<<<<<<]
+[2026-07-01 21:00:19,097: INFO: main: >>>>>>>>>> Stage : Data Creaet Vectors Started <<<<<<<<<<]
+[2026-07-01 21:00:19,100: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-01 21:00:19,102: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-01 21:00:19,120: INFO: Common: Created directory : artifacts/Create_Vectors]
+[2026-07-01 21:00:19,125: INFO: SentenceTransformer: Use pytorch device_name: cpu]
+[2026-07-01 21:00:19,125: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2]
+[2026-07-01 21:00:21,905: INFO: main: >>>>>>>>>> Stage : Data Creaet Vectors Completed Successfully <<<<<<<<<<]

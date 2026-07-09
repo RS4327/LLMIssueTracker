@@ -7,6 +7,8 @@ from LLMIssueTracker.Entity.Config_Entity import (
     oracleDBconnection
     )
 from LLMIssueTracker.Entity.Config_Entity import DataCleaningConfig
+from LLMIssueTracker.Entity.Config_Entity import CreateEmbedingsConfig
+from LLMIssueTracker.Entity.Config_Entity import CreateVectorsConfig
 
 class ConfigurationManager:
 
@@ -43,6 +45,8 @@ class ConfigurationManager:
         # Load Data_Ingestion section from Config.yaml
         self.Data_Ingestion = self.config.Data_Ingestion
         self.Data_Cleaning = self.config.Data_Cleaning
+        self.Create_Embendings=self.config.Create_Embendings
+        self.Create_Vectors=self.config.Create_Vectors
 
     def get_data_ingestion_config(self) -> DataIngestionConfig:
 
@@ -81,3 +85,28 @@ class ConfigurationManager:
         )
 
         return data_cleaning_config
+    def get_create_embendings_config(self)->CreateEmbedingsConfig:
+        config=self.Create_Embendings
+        os.chdir("c:\\Users\\RSR\\PYTHON\\LLMIssueTracker")
+        create_directories([config.root_dir])
+
+        create_embendings_config=CreateEmbedingsConfig(
+            root_dir=config.root_dir,
+            source_path=config.source_path,
+            local_data_file=config.local_data_file
+        )
+        return create_embendings_config
+    def get_create_vectors_config(self) -> CreateVectorsConfig:
+
+        config=self.Create_Vectors
+        os.chdir("c:\\Users\\RSR\\PYTHON\\LLMIssueTracker")
+        create_directories([config.root_dir])
+        create_vectors_config=CreateVectorsConfig(
+            root_dir=config.root_dir,
+            source_path=config.source_path,
+            local_data_file=config.local_data_file
+        )
+        return create_vectors_config
+        
+        
+
