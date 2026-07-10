@@ -9,6 +9,7 @@ from LLMIssueTracker.Entity.Config_Entity import (
 from LLMIssueTracker.Entity.Config_Entity import DataCleaningConfig
 from LLMIssueTracker.Entity.Config_Entity import CreateEmbedingsConfig
 from LLMIssueTracker.Entity.Config_Entity import CreateVectorsConfig
+from LLMIssueTracker.Entity.Config_Entity import CreateRagEngineConfig
 
 class ConfigurationManager:
 
@@ -47,6 +48,7 @@ class ConfigurationManager:
         self.Data_Cleaning = self.config.Data_Cleaning
         self.Create_Embendings=self.config.Create_Embendings
         self.Create_Vectors=self.config.Create_Vectors
+        self.Create_Rag_Engine =self.config.Create_Rag_Engine
 
     def get_data_ingestion_config(self) -> DataIngestionConfig:
 
@@ -103,10 +105,22 @@ class ConfigurationManager:
         create_directories([config.root_dir])
         create_vectors_config=CreateVectorsConfig(
             root_dir=config.root_dir,
+            faiss_index=config.faiss_index,
             source_path=config.source_path,
             local_data_file=config.local_data_file
         )
         return create_vectors_config
-        
+    def get_create_rag_engine(self)-> CreateRagEngineConfig:
+        config=self.config.Create_Rag_Engine
+
+        create_directories([config.root_dir])
+        create_rag_engine=CreateRagEngineConfig(
+            root_dir=config.root_dir,
+            faiss_index=config.faiss_index,
+            source_path=config.source_path,
+            local_data_file=config.local_data_file
+        )        
+
+        return create_rag_engine
         
 

@@ -31,5 +31,12 @@ class CreateEmbedingsConfig:
 @dataclass
 class CreateVectorsConfig:
     root_dir : Path 
+    faiss_index : str
     source_path : str
     local_data_file : str 
+@dataclass
+class CreateRagEngineConfig:
+    root_dir : Path 
+    faiss_index : str
+    source_path : str 
+    local_data_file :str

@@ -1039,3 +1039,239 @@ ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")]
 [2026-07-01 21:00:19,125: INFO: SentenceTransformer: Use pytorch device_name: cpu]
 [2026-07-01 21:00:19,125: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2]
 [2026-07-01 21:00:21,905: INFO: main: >>>>>>>>>> Stage : Data Creaet Vectors Completed Successfully <<<<<<<<<<]
+[2026-07-10 16:10:29,271: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-07-10 16:11:39,544: WARNING: module_wrapper: From C:\Users\rajum\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2026-07-10 16:11:41,290: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-07-10 16:11:47,498: INFO: loader: Loading faiss with AVX2 support.]
+[2026-07-10 16:11:47,499: INFO: loader: Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")]
+[2026-07-10 16:11:47,499: INFO: loader: Loading faiss.]
+[2026-07-10 16:11:47,814: INFO: loader: Successfully loaded faiss.]
+[2026-07-10 16:11:47,848: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-07-10 16:11:47,928: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 16:11:47,976: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 16:11:47,999: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-07-10 16:12:04,255: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-07-10 16:12:04,256: INFO: main: >>>>>>>>>> Stage : Data Cleaning Started <<<<<<<<<<]
+[2026-07-10 16:12:04,268: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 16:12:04,272: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 16:12:04,489: INFO: Common: Created directory : artifacts/Data_Cleaning]
+[2026-07-10 16:12:04,611: ERROR: main: [Errno 13] Permission denied: 'artifacts\\Data_Cleaning\\pre_processed_log.csv']
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 45, in <module>
+    df=obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_02_Data_Cleaning.py", line 27, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_02_Data_Cleaning.py", line 23, in main
+    df = preprocessing.Data_Preprocessing()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Components\Data_Cleaning.py", line 47, in Data_Preprocessing
+    df.to_csv(self.save_file,index=False)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\core\generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\rajum\anaconda3\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'artifacts\\Data_Cleaning\\pre_processed_log.csv'
+[2026-07-10 16:14:34,164: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-07-10 16:15:43,455: WARNING: module_wrapper: From C:\Users\rajum\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2026-07-10 16:15:45,274: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-07-10 16:15:47,558: INFO: loader: Loading faiss with AVX2 support.]
+[2026-07-10 16:15:47,559: INFO: loader: Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")]
+[2026-07-10 16:15:47,559: INFO: loader: Loading faiss.]
+[2026-07-10 16:15:47,721: INFO: loader: Successfully loaded faiss.]
+[2026-07-10 16:15:47,747: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-07-10 16:15:47,760: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 16:15:47,772: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 16:15:47,791: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-07-10 16:15:48,994: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-07-10 16:15:48,995: INFO: main: >>>>>>>>>> Stage : Data Cleaning Started <<<<<<<<<<]
+[2026-07-10 16:15:49,010: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 16:15:49,021: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 16:15:49,078: INFO: Common: Created directory : artifacts/Data_Cleaning]
+[2026-07-10 16:15:49,127: INFO: main: >>>>>>>>>> Stage : Data Cleaning Completed Successfully <<<<<<<<<<]
+[2026-07-10 16:15:49,127: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Started <<<<<<<<<<]
+[2026-07-10 16:15:49,133: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 16:15:49,140: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 16:15:49,172: INFO: Common: Created directory : artifacts/Create_Embendings]
+[2026-07-10 16:15:49,184: INFO: SentenceTransformer: Use pytorch device_name: cpu]
+[2026-07-10 16:15:49,185: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2]
+[2026-07-10 16:15:55,321: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Completed Successfully <<<<<<<<<<]
+[2026-07-10 16:15:55,321: INFO: main: >>>>>>>>>> Stage : Data Creaet Vectors Started <<<<<<<<<<]
+[2026-07-10 16:15:55,329: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 16:15:55,336: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 16:15:55,364: INFO: Common: Created directory : artifacts/Create_Vectors]
+[2026-07-10 16:15:55,378: INFO: SentenceTransformer: Use pytorch device_name: cpu]
+[2026-07-10 16:15:55,379: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2]
+[2026-07-10 16:15:59,152: INFO: main: >>>>>>>>>> Stage : Data Creaet Vectors Completed Successfully <<<<<<<<<<]
+[2026-07-10 16:15:59,153: INFO: main: >>>>>>>>>> Stage : Creaet Rag Engine Started <<<<<<<<<<]
+[2026-07-10 16:15:59,163: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 16:15:59,168: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 16:15:59,210: ERROR: main: Key 'create_rag_engine' not found in ConfigBox]
+Traceback (most recent call last):
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\main.py", line 101, in <module>
+    results =obj.main()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_05_Create_Rag_Engine.py", line 27, in main
+    raise e
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\PipeLine\Stage_05_Create_Rag_Engine.py", line 21, in main
+    config = ConfigurationManager().get_create_rag_engine()
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Config\ConfigurationManager.py", line 114, in get_create_rag_engine
+    config=self.config.create_rag_engine
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\RSR\PYTHON\LLMIssueTracker\src\LLMIssueTracker\Utils\Common.py", line 15, in __getattr__
+    raise AttributeError(
+        f"Key '{item}' not found in ConfigBox"
+    )
+AttributeError: Key 'create_rag_engine' not found in ConfigBox. Did you mean: 'Create_Rag_Engine'?
+[2026-07-10 16:17:35,273: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-07-10 16:18:40,148: WARNING: module_wrapper: From C:\Users\rajum\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2026-07-10 16:18:41,354: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-07-10 16:18:43,528: INFO: loader: Loading faiss with AVX2 support.]
+[2026-07-10 16:18:43,529: INFO: loader: Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")]
+[2026-07-10 16:18:43,529: INFO: loader: Loading faiss.]
+[2026-07-10 16:18:43,735: INFO: loader: Successfully loaded faiss.]
+[2026-07-10 16:18:43,756: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-07-10 16:18:43,770: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 16:18:43,780: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 16:18:43,793: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-07-10 16:18:45,049: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-07-10 16:18:45,050: INFO: main: >>>>>>>>>> Stage : Data Cleaning Started <<<<<<<<<<]
+[2026-07-10 16:18:45,063: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 16:18:45,071: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 16:18:45,135: INFO: Common: Created directory : artifacts/Data_Cleaning]
+[2026-07-10 16:18:45,209: INFO: main: >>>>>>>>>> Stage : Data Cleaning Completed Successfully <<<<<<<<<<]
+[2026-07-10 16:18:45,210: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Started <<<<<<<<<<]
+[2026-07-10 16:18:45,216: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 16:18:45,221: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 16:18:45,265: INFO: Common: Created directory : artifacts/Create_Embendings]
+[2026-07-10 16:18:45,283: INFO: SentenceTransformer: Use pytorch device_name: cpu]
+[2026-07-10 16:18:45,283: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2]
+[2026-07-10 16:18:50,295: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Completed Successfully <<<<<<<<<<]
+[2026-07-10 16:18:50,296: INFO: main: >>>>>>>>>> Stage : Data Creaet Vectors Started <<<<<<<<<<]
+[2026-07-10 16:18:50,301: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 16:18:50,305: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 16:18:50,324: INFO: Common: Created directory : artifacts/Create_Vectors]
+[2026-07-10 16:18:50,330: INFO: SentenceTransformer: Use pytorch device_name: cpu]
+[2026-07-10 16:18:50,330: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2]
+[2026-07-10 16:18:54,007: INFO: main: >>>>>>>>>> Stage : Data Creaet Vectors Completed Successfully <<<<<<<<<<]
+[2026-07-10 16:18:54,008: INFO: main: >>>>>>>>>> Stage : Creaet Rag Engine Started <<<<<<<<<<]
+[2026-07-10 16:18:54,017: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 16:18:54,026: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 16:18:54,103: INFO: Common: Created directory : artifacts/Rag_Engine]
+[2026-07-10 16:18:54,106: INFO: Common: Created directory : artifacts/Rag_Engine]
+[2026-07-10 16:18:54,127: INFO: SentenceTransformer: Use pytorch device_name: cpu]
+[2026-07-10 16:18:54,128: INFO: SentenceTransformer: Load pretrained SentenceTransformer: Sentence-transformers/all-miniLM-L6-v2]
+[2026-07-10 16:19:00,677: INFO: main: >>>>>>>>>> Stage : Creaet Rag Engine Completed Successfully <<<<<<<<<<]
+[2026-07-10 16:20:39,044: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-07-10 16:21:46,301: WARNING: module_wrapper: From C:\Users\rajum\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2026-07-10 16:21:47,663: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-07-10 16:21:50,337: INFO: loader: Loading faiss with AVX2 support.]
+[2026-07-10 16:21:50,338: INFO: loader: Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")]
+[2026-07-10 16:21:50,338: INFO: loader: Loading faiss.]
+[2026-07-10 16:21:50,605: INFO: loader: Successfully loaded faiss.]
+[2026-07-10 16:21:50,641: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-07-10 16:21:50,661: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 16:21:50,677: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 16:21:50,694: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-07-10 16:21:52,636: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-07-10 16:21:52,636: INFO: main: >>>>>>>>>> Stage : Data Cleaning Started <<<<<<<<<<]
+[2026-07-10 16:21:52,649: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 16:21:52,656: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 16:21:52,714: INFO: Common: Created directory : artifacts/Data_Cleaning]
+[2026-07-10 16:21:52,803: INFO: main: >>>>>>>>>> Stage : Data Cleaning Completed Successfully <<<<<<<<<<]
+[2026-07-10 16:21:52,804: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Started <<<<<<<<<<]
+[2026-07-10 16:21:52,813: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 16:21:52,817: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 16:21:52,845: INFO: Common: Created directory : artifacts/Create_Embendings]
+[2026-07-10 16:21:52,857: INFO: SentenceTransformer: Use pytorch device_name: cpu]
+[2026-07-10 16:21:52,858: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2]
+[2026-07-10 16:21:58,528: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Completed Successfully <<<<<<<<<<]
+[2026-07-10 16:21:58,529: INFO: main: >>>>>>>>>> Stage : Data Creaet Vectors Started <<<<<<<<<<]
+[2026-07-10 16:21:58,542: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 16:21:58,548: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 16:21:58,599: INFO: Common: Created directory : artifacts/Create_Vectors]
+[2026-07-10 16:21:58,605: INFO: SentenceTransformer: Use pytorch device_name: cpu]
+[2026-07-10 16:21:58,606: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2]
+[2026-07-10 16:22:02,419: INFO: main: >>>>>>>>>> Stage : Data Creaet Vectors Completed Successfully <<<<<<<<<<]
+[2026-07-10 16:22:02,420: INFO: main: >>>>>>>>>> Stage : Creaet Rag Engine Started <<<<<<<<<<]
+[2026-07-10 16:22:02,437: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 16:22:02,446: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 16:22:02,477: INFO: Common: Created directory : artifacts/Rag_Engine]
+[2026-07-10 16:22:02,478: INFO: Common: Created directory : artifacts/Rag_Engine]
+[2026-07-10 16:22:02,484: INFO: SentenceTransformer: Use pytorch device_name: cpu]
+[2026-07-10 16:22:02,485: INFO: SentenceTransformer: Load pretrained SentenceTransformer: Sentence-transformers/all-miniLM-L6-v2]
+[2026-07-10 16:22:08,683: INFO: main: >>>>>>>>>> Stage : Creaet Rag Engine Completed Successfully <<<<<<<<<<]
+[2026-07-10 18:01:14,657: INFO: utils: NumExpr defaulting to 8 threads.]
+[2026-07-10 18:02:23,033: WARNING: module_wrapper: From C:\Users\rajum\anaconda3\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2026-07-10 18:02:25,374: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-07-10 18:02:29,461: INFO: loader: Loading faiss with AVX2 support.]
+[2026-07-10 18:02:29,462: INFO: loader: Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")]
+[2026-07-10 18:02:29,462: INFO: loader: Loading faiss.]
+[2026-07-10 18:02:42,698: INFO: loader: Successfully loaded faiss.]
+[2026-07-10 18:02:43,760: INFO: main: >>>>>>>>>> Stage : Data Ingestion Started <<<<<<<<<<]
+[2026-07-10 18:02:43,802: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 18:02:43,815: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 18:02:43,855: INFO: Common: Created directory : artifacts/DataIngestion]
+[2026-07-10 18:03:10,675: INFO: main: >>>>>>>>>> Stage : Data Ingestion Completed Successfully <<<<<<<<<<]
+[2026-07-10 18:03:10,677: INFO: main: >>>>>>>>>> Stage : Data Cleaning Started <<<<<<<<<<]
+[2026-07-10 18:03:10,688: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 18:03:10,695: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 18:03:10,784: INFO: Common: Created directory : artifacts/Data_Cleaning]
+[2026-07-10 18:03:13,872: INFO: main: >>>>>>>>>> Stage : Data Cleaning Completed Successfully <<<<<<<<<<]
+[2026-07-10 18:03:13,873: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Started <<<<<<<<<<]
+[2026-07-10 18:03:13,884: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 18:03:13,892: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 18:03:13,920: INFO: Common: Created directory : artifacts/Create_Embendings]
+[2026-07-10 18:03:13,933: INFO: SentenceTransformer: Use pytorch device_name: cpu]
+[2026-07-10 18:03:13,933: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2]
+[2026-07-10 18:03:20,699: INFO: main: >>>>>>>>>> Stage : Data Creaet Embendings Completed Successfully <<<<<<<<<<]
+[2026-07-10 18:03:20,699: INFO: main: >>>>>>>>>> Stage : Data Creaet Vectors Started <<<<<<<<<<]
+[2026-07-10 18:03:20,707: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 18:03:20,714: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 18:03:20,767: INFO: Common: Created directory : artifacts/Create_Vectors]
+[2026-07-10 18:03:20,773: INFO: SentenceTransformer: Use pytorch device_name: cpu]
+[2026-07-10 18:03:20,774: INFO: SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2]
+[2026-07-10 18:03:24,640: INFO: main: >>>>>>>>>> Stage : Data Creaet Vectors Completed Successfully <<<<<<<<<<]
+[2026-07-10 18:03:24,640: INFO: main: >>>>>>>>>> Stage : Creaet Rag Engine Started <<<<<<<<<<]
+[2026-07-10 18:03:24,649: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Config\Config.yaml]
+[2026-07-10 18:03:24,655: INFO: Common: YAML file loaded successfully : C:\Users\RSR\PYTHON\LLMIssueTracker\Params.yaml]
+[2026-07-10 18:03:24,722: INFO: Common: Created directory : artifacts/Rag_Engine]
+[2026-07-10 18:03:24,723: INFO: Common: Created directory : artifacts/Rag_Engine]
+[2026-07-10 18:03:24,731: INFO: SentenceTransformer: Use pytorch device_name: cpu]
+[2026-07-10 18:03:24,732: INFO: SentenceTransformer: Load pretrained SentenceTransformer: Sentence-transformers/all-miniLM-L6-v2]
+[2026-07-10 18:03:30,696: INFO: main: >>>>>>>>>> Stage : Creaet Rag Engine Completed Successfully <<<<<<<<<<]

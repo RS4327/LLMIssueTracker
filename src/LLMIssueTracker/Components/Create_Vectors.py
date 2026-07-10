@@ -34,7 +34,7 @@ class CreateVectors:
 
         faiss.write_index(
             index,
-            self.config.local_data_file
+            self.config.faiss_index
         )
 
         with open(

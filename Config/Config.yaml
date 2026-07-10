@@ -24,9 +24,13 @@
 
  Create_Vectors :
   root_dir : artifacts/Create_Vectors
+  faiss_index : artifacts/Create_Vectors/faiss_index
   source_path : artifacts/DataIngestion/com_data_log.csv
   local_data_file : artifacts/Create_Vectors/index.pkl
- Rag_Engine :
+ Create_Rag_Engine :
   root_dir : artifacts/Rag_Engine
+  faiss_index : artifacts/Create_Vectors/faiss_index
   source_path : artifacts/Create_Vectors/index.pkl
-  local_data_file : artifacts/Rag_Engine/
+  local_data_file : artifacts/Rag_Engine/index.pkl
+
+   
