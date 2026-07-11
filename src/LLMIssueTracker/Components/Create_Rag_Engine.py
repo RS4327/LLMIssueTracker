@@ -1,5 +1,8 @@
 import os 
 from pathlib import Path 
+import os 
+
+os.chdir("c:\\Users\\RSR\\PYTHON\\LLMIssueTracker")
 import pandas as pd 
 from LLMIssueTracker.Utils.Common import * 
 from LLMIssueTracker.Entity.Config_Entity import *
@@ -14,7 +17,15 @@ class CreateRagEngine:
         self.config=config
         create_directories([self.config.root_dir])
         self.model=SentenceTransformer("Sentence-transformers/all-miniLM-L6-v2") 
+        
+
+        print("Current Working Directory :", os.getcwd())
+        print("Configured FAISS Path     :", self.config.faiss_index)
+        print("Absolute Path             :", Path(self.config.faiss_index).resolve())
+        print("File Exists               :", Path(self.config.faiss_index).exists())
+
         self.index=faiss.read_index(self.config.faiss_index)
+        
         with open(self.config.source_path,'rb') as file:
             self.docs=pickle.load(file)
         
@@ -28,37 +39,41 @@ class CreateRagEngine:
         distances, indices = self.index.search(query_vector, k=5)
 
         # Retrieve similar documents
-        results = []
+        best_match = ""
 
-        for idx in indices[0]:
-            if idx != -1:
-                results.append(self.docs[idx])
+        if indices[0][0] != -1:
+            best_match = self.docs[indices[0][0]]
 
-        # Prepare context
-        context = "\n\n".join(results)
+        context = best_match
 
         # Prompt for LLM
+        
         prompt = f"""
 You are an Oracle Production Support Expert.
 
-Below are historical production incidents.
+A historical incident matching the user's issue is shown below.
 
-Historical Incidents:
 {context}
 
-New Incident:
+The user reported:
+
 {issue}
 
-Based on the historical incidents, provide:
+If the historical incident already contains the answer, DO NOT create a new solution.
 
-1. Root Cause
-2. Resolution Steps
-3. SQL Fix (if required)
-4. Oracle Package/Object Impact
-5. Prevention Steps
+Return ONLY this format:
 
-Give the answer in a professional format.
+Issue:
+Root Cause:
+Resolution:
+SQL Query:
+Package:
+
+Do not add explanations.
+Do not summarize.
+Do not invent information.
 """
+        
         print("Total documents :", len(self.docs))
         print("Top matched indexes :", indices[0])
         print("Distances :", distances[0])

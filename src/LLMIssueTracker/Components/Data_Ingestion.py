@@ -88,13 +88,7 @@ class DataIngestion:
 
             query = f"""
                 SELECT
-                    ID,
-                    TYPE,
-                    PROCESS,
-                    SUB_PROCESS,
-                    LOG_TEXT,
-                    STATUS,
-                    COMMENTS
+                    PACKAGE, SQL_QUERY, ISSUE, ROOT_CAUSE, RESOLUTION
                 FROM {self.config.source_table}
                 WHERE STATUS = 'ERROR'
             """

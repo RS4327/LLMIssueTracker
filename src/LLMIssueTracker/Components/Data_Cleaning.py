@@ -36,13 +36,18 @@ class DataCleaning:
             text=re.sub(r'\s+',' ',text)
 
             return text.strip()
-        df['COMMENTS']=df['COMMENTS'].apply(Clean_text)
-        df['PROCESS']=df['PROCESS'].apply(Clean_text)
-        df['LOG_TEXT']=df['LOG_TEXT'].apply(Clean_text)
+        #PACKAGE, SQL_QUERY, ISSUE, ROOT_CAUSE, RESOLUTION
+        df['PACKAGE']=df['PACKAGE'].apply(Clean_text)
+        df['SQL_QUERY']=df['SQL_QUERY'].apply(Clean_text)
+        df['ISSUE']=df['ISSUE'].apply(Clean_text)
+        df['ROOT_CAUSE']=df['ROOT_CAUSE'].apply(Clean_text)
+        df['RESOLUTION']=df['RESOLUTION'].apply(Clean_text)
 
-        df['Document']=("Issue : " + df['COMMENTS'] +
-                        "ROOT Casue :"+df['PROCESS']+
-                        "Pkg : "+df['LOG_TEXT']
+        df['Document']=("PACKAGE : " + df['PACKAGE'] +
+                        "SQL_QUERY :"+df['SQL_QUERY']+
+                        "ISSUE : "+df['ISSUE']+
+                        "ROOT_CAUSE : "+df['ROOT_CAUSE']+
+                        "RESOLUTION : "+df['RESOLUTION']
                         )
         df.to_csv(self.save_file,index=False)
 

@@ -20,9 +20,11 @@ class CreateEmbedings:
         documents=[]
         for _,row in df.iterrows():
              text = f"""
-             Issue: {row['COMMENTS']}
-             Root Cause: {row['PROCESS']}
-             Resolution: {row['LOG_TEXT']}
+             Package: {row['PACKAGE']}
+             Sql Query: {row['SQL_QUERY']}
+             Issue: {row['ISSUE']}
+             Root Cause: {row['ROOT_CAUSE']}
+             Resolvution : {row['RESOLUTION']}
              """
 
              documents.append(text)
